@@ -3,7 +3,7 @@
         width: 100%;
         overflow: hidden;
         &-item {
-            height: 220px;
+            height: 100%;
             border-radius: var(--radius);
             padding: var(--padding-layout) calc(var(--padding-layout) * 1.2);
             display: flex !important;
@@ -23,6 +23,11 @@
         }
 
         .slick {
+            &-list,
+            &-track,
+            &-slide > div{
+                height: 100%;
+            }
             &-dots {
                 &-rectangle {
                     width: fit-content;

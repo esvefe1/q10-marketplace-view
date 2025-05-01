@@ -31,6 +31,8 @@ body {
     display: grid;
     grid-template-columns: var(--sidebar) 1fr;
     height: 100%;
+    overflow: hidden;
+    background-color: var(--color-gray);
 }
 
 .container{
