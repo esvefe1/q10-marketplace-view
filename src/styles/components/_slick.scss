@@ -1,0 +1,61 @@
+.slick {
+    &-banner {
+        width: 100%;
+        overflow: hidden;
+        &-item {
+            height: 220px;
+            border-radius: var(--radius);
+            padding: var(--padding-layout) calc(var(--padding-layout) * 1.2);
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--color-white);
+            gap: var(--gap-inset-control);
+
+            > h2 {
+                max-width: 60%;
+                font-size: var(--h3);
+                font-weight: 600;
+            }
+            > p {
+                font-size: var(--parag-m);
+            }
+        }
+
+        .slick {
+            &-dots {
+                &-rectangle {
+                    width: fit-content;
+                    display: flex !important;
+                    margin: 0 auto 0;
+                    gap: 4px;
+                    position: absolute;
+                    bottom: calc(var(--padding-layout) / 2);
+                    right: calc(var(--padding-layout) / 2);
+
+                    > li {
+                        display: inline-flex;
+
+                        > button {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 10px;
+                            background-color: rgba(0, 0, 0, 0.21);
+                            padding: 0;
+                            color: transparent;
+                            transition: all 0.2s;
+                            cursor: pointer;
+                        }
+
+                        &.slick-active {
+                            > button {
+                                width: 32px;
+                                background-color: rgba(0, 0, 0, 0.36);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

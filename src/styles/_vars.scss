@@ -1,0 +1,78 @@
+:root {
+    // basics
+    --scale: 0.7;
+    --px-add: 4px;
+    --radius: 0.625rem;
+
+    // sizes
+    --header: calc(4.125rem * var(--scale) + var(--px-add));
+    --sidebar: calc(18.75rem * var(--scale) + var(--px-add));
+    --control: 3.125rem;
+    --thumbnail-banner: calc(12.5rem * var(--scale) + var(--px-add));
+    --container: 1300px;
+    --container-blog: 43.75rem;
+    --scroll-v: 0.625rem;
+    --width-grid: 18.75rem;
+
+    // font
+    //// families
+    --font-family-title: "Signika";
+    --font-family-parag: "Inter";
+    //// sizes
+    --h1-l: calc(3.5rem * var(--scale) + var(--px-add));
+    --h1: calc(3rem * var(--scale) + var(--px-add));
+    --h2: calc(2.5rem * var(--scale) + var(--px-add));
+    --h3: calc(2rem * var(--scale) + var(--px-add));
+    --h4: calc(1.75rem * var(--scale) + var(--px-add));
+    --h5: calc(1.5rem * var(--scale) + var(--px-add));
+    --h6: calc(1.25rem * var(--scale) + var(--px-add));
+    --parag-l: calc(1.375rem * var(--scale) + var(--px-add));
+    --parag-m: calc(1.25rem * var(--scale) + var(--px-add));
+    --parag-s: calc(1rem * var(--scale) + var(--px-add));
+    --parag-xs: calc(0.875rem * var(--scale) + var(--px-add));
+    --parag-xxs: calc(0.725rem * var(--scale) + var(--px-add));
+
+    // paddings
+    --padding-layout: 1rem;;
+
+    // gaps
+    --gap-items: 0.938rem;
+    --gap-text: 0.2rem;
+    --gap-inset-control: 0.5rem;
+    --margin-section: 4rem;
+
+    // colors
+    --color-white: #fff;
+    --color-gray: #f6f6f6;
+    --color-black: #282828;
+    --color-primary: #F89939;
+    --color-green: #3A8B7E;
+    --color-purple: #673A8D;
+    --color-blue: #4670B5;
+    --color-red: #E7385B;
+    --color-orange: #CF6A16;
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+        --padding-layout: 4.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        --scale: 1;
+        --px-add: 0px;
+        --padding-layout: 2rem;
+        --margin-section: 8rem;
+    }
+
+    @media (min-width: 991px) and (max-width: 1199px) {
+        --scale: 0.9;
+        --px-add: 2px;
+        --padding-layout: 2rem;
+        --margin-section: 6rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 990px) {
+        --scale: 0.8;
+        --px-add: 3px;
+        --padding-layout: 2rem;
+    }
+}

@@ -1,0 +1,8 @@
+.header{
+    height: var(--header);
+    flex: 1 0 auto;
+    padding: 0 var(--padding-layout);
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+}

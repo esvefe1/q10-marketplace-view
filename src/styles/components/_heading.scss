@@ -1,0 +1,22 @@
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 326px;
+    padding: var(--padding-layout);
+    gap: var(--gap-items);
+
+    &-featured {
+        background-color: var(--color-gray);
+        border-radius: var(--radius);
+        padding: calc(var(--padding-layout) / 2);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--padding-layout) / 2);
+
+        > h4 {
+            font-family: var(--font-family-title);
+            font-size: var(--h6);
+            font-weight: 500;
+        }
+    }
+}

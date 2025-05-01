@@ -1,0 +1,7 @@
+.list{
+    &-apps{
+        background-color: var(--color-gray);
+        min-height: 100%;
+        padding: var(--padding-layout);
+    }
+}

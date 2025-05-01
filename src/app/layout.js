@@ -1,15 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '@/styles/_global.scss'
+import Header from '@/components/header';
+import Sidebar from '@/components/sidebar';
 
 export const metadata = {
   title: "Create Next App",
@@ -18,9 +11,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang="es">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet" />
+      </head>
+      <body>
+        <Header />
+        <main className='main'>
+          <Sidebar />
+          <div className='container'>
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
