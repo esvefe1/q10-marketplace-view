@@ -12,7 +12,7 @@ Este proyecto es una prueba técnica desarrollada para la empresa **Q10**, con e
 
 ## 🚀 Instalación y ejecución
 
-Asegúrate de tener `nvm` y `yarn` instalados.
+Asegúrate de tener `nvm` v20.x y `yarn` instalados.
 
 1. **Clona el repositorio:**
 
