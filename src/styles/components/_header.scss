@@ -1,8 +1,83 @@
-.header{
+.header {
     height: var(--header);
     flex: 1 0 auto;
     padding: 0 var(--padding-layout);
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 200px 500px 200px;
+    justify-content: space-between;
     align-items: center;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-items);
+
+        &-business {
+            border-left: 1px solid rgba(0, 0, 0, 0.4);
+            padding-left: var(--gap-items);
+            font-size: var(--parag-m);
+            color: var(--color-black);
+            opacity: 0.8;
+        }
+    }
+
+    &-search {
+        width: 100%;
+        &-input {
+            width: 100%;
+            background-color: var(--color-gray);
+            display: flex;
+            align-items: center;
+            gap: var(--gap-items);
+            padding: 12px 0 12px 20px;
+            border-radius: var(--radius);
+            > input{
+                width: 100%;
+                border: navajowhite;
+                background-color: transparent;
+                font-size: 16px;
+
+                &:focus{
+                    outline: none;
+                    border: none;
+                }
+            }
+            > svg {
+                width: 20px;
+            }
+        }
+    }
+
+    &-user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-end;
+        cursor: pointer;
+
+        &-photo{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: var(--color-gray);
+            object-fit: cover;
+            object-position: center;
+        }
+        &-data{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            > h6{
+                font-size: var(--parag-s);
+            }
+            > p{
+                font-size: var(--parag-xs);
+                font-weight: 300;
+            }
+        }
+
+        > svg{
+            width: 20px;
+        }
+    }
 }

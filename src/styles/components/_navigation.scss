@@ -1,0 +1,18 @@
+.menu-item{
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-items);
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    > svg{
+        width: 20px;
+        opacity: .4;
+    }
+
+    &:hover,
+    &-active{
+        background-color: var(--color-gray);
+    }
+}
